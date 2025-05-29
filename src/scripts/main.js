@@ -358,6 +358,9 @@ const people = [
 
 document.addEventListener('DOMContentLoaded', () => {
   const table = document.querySelector('.dashboard');
+   if (!table) {
+     return;
+   }
 
   people.forEach((person) => {
     const tr = document.createElement('tr');
